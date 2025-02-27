@@ -1,16 +1,79 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .block-heading {
+            color: #3b99e0;
+            text-align: center;
+            margin: 20px 0;
+        }
+        .summary {
+            border-top: 2px solid #5ea4f3;
+            background-color: #f7fbff;
+            padding: 15px;
+            border-bottom: 1px solid #ddd;
+        }
+        .summary .btn {
+            background-color: #3b99e0;
+            color: #fff;
+            width: 100%;
+        }
+        .product img {
+            max-width: 100px;
+        }
+    </style>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
-
+    <div class="container">
+        <h2 class="block-heading">Shopping Cart</h2>
+        <div class="row">
+            <!-- Product Section -->
+            <div class="col-lg-8">
+                <div class="product border p-3 mb-3">
+                    <div class="row align-items-center">
+                        <div class="col-3">
+                            <img src="https://via.placeholder.com/100" class="img-fluid" alt="Product">
+                        </div>
+                        <div class="col-6">
+                            <h5>Product Name</h5>
+                            <p>$20.00</p>
+                        </div>
+                        <div class="col-3 text-end">
+                            <button class="btn btn-danger btn-sm">Remove</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product border p-3 mb-3">
+                    <div class="row align-items-center">
+                        <div class="col-3">
+                            <img src="https://via.placeholder.com/100" class="img-fluid" alt="Product">
+                        </div>
+                        <div class="col-6">
+                            <h5>Product Name</h5>
+                            <p>$15.00</p>
+                        </div>
+                        <div class="col-3 text-end">
+                            <button class="btn btn-danger btn-sm">Remove</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Summary Section -->
+            <div class="col-lg-4">
+                <div class="summary">
+                    <h4>Order Summary</h4>
+                    <p>Subtotal: $35.00</p>
+                    <p>Tax: $3.50</p>
+                    <h5>Total: $38.50</h5>
+                    <button class="btn">Checkout</button>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
-
 </html>
+
